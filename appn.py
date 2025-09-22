@@ -11,7 +11,7 @@ st.set_page_config(
 # Las clases de Streamlit han cambiado, por lo que las reglas CSS ahora son diferentes.
 # He optado por una solución más simple y robusta.
 with st.sidebar:
-    st.image("IMG/LOGO.jpg", use_container_width=True) # Corregido: usa el parámetro correcto
+    st.image("IMG/LOGO_mob.png.gif", use_container_width=True) # Corregido: usa el parámetro correcto
     st.markdown("### Sura Actuarial Desk")
     
     st.markdown("---")
@@ -99,3 +99,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
