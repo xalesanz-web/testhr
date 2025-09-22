@@ -9,20 +9,15 @@ section[data-testid="stSidebar"] {
 }
 
 /* Estilo para los títulos y texto de la barra lateral */
-.st-emotion-cache-18ni7ap { /* Selector para el contenedor del logo y el título en la sidebar */
-    color: white;
-}
-.st-emotion-cache-1w21rpi { /* Selector para el título del logo */
-    color: white;
-}
-.st-emotion-cache-n9n9p2 { /* Selector para el texto en la sidebar */
-    color: white;
-}
-.st-emotion-cache-18ni7ap { /* Otro selector para el texto de la sidebar */
-    color: white;
+[data-testid="stSidebar"] h3 {
+    color: white !important;
 }
 
-/* Estilo para el botón de expandir/contraer sidebar */
+[data-testid="stSidebar"] p {
+    color: white !important;
+}
+
+/* Oculta el botón de la flecha de la barra lateral */
 button[data-testid="stSidebarNav"] {
     display: none !important;
 }
@@ -37,4 +32,9 @@ button[data-testid="stSidebarNav"] {
 }
 .stButton > button:hover {
     background-color: #002e5e !important;
+}
+
+/* Estilo para los títulos principales */
+h1 {
+    color: white !important;
 }
