@@ -26,12 +26,12 @@ section[data-testid="stSidebar"] {
     background-color: #002e5e !important;
 }
 
-/* Oculta el botón del icono de la barra lateral */
-button[data-testid="stSidebarNavCollapseButton"] {
-    visibility: hidden;
-}
-
 /* Estilo para los títulos principales */
 h1 {
     color: white !important;
+}
+
+/* Muestra la imagen principal y la imagen en la barra lateral */
+.st-emotion-cache-1w21rpi {
+    visibility: visible !important;
 }
