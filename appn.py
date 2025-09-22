@@ -59,42 +59,60 @@ st.markdown(
     <style>
     /* Estilo para el fondo de la página */
     .stApp {
-        background-color: #001f3f;
+        background-color: #001f3f; /* Azul oscuro similar al de tu imagen */
     }
 
-    /* Estilo de la barra lateral */
-    .st-emotion-cache-1d3d0q6 { /* Clase para el fondo de la sidebar */
-        background-color: #00122e;
+    /* Estilo de la barra lateral, usando un selector más genérico para el fondo */
+    section[data-testid="stSidebar"] {
+        background-color: #00122e; /* Azul aún más oscuro para la sidebar */
     }
 
-    /* Estilo de los botones y texto en la sidebar */
-    .st-emotion-cache-1c7v05d, .st-emotion-cache-18j13h4 { /* Clases para el texto y los botones */
+    /* Estilo para los botones y texto en la sidebar */
+    .st-emotion-cache-1c7v05d, .st-emotion-cache-18j13h4 {
         color: white;
     }
+    
+    /* Estilo para el texto dentro de los botones */
+    div.st-emotion-cache-19pmoj0 p {
+        color: white;
+        text-align: left;
+    }
+    
+    /* Estilo para los botones al pasar el ratón */
+    .stButton > button {
+        background-color: transparent !important;
+        border: none !important;
+        color: white !important;
+        text-align: left;
+        width: 100%;
+    }
+    .stButton > button:hover {
+        background-color: #002e5e !important; /* Un poco más claro al pasar el ratón */
+    }
 
-    /* Estilo para el contenido principal */
-    .st-emotion-cache-h5h2a3 { /* Clase para el contenedor principal */
+    /* Estilo para el ícono de la barra lateral */
+    button[data-testid="stSidebarNav"] {
+        display: none !important;
+    }
+
+    /* Estilo para los títulos */
+    h3 {
+        color: white !important;
+    }
+
+    /* Estilo para los títulos principales */
+    h1 {
+        color: white !important;
+    }
+
+    /* Ajuste de margen del contenedor principal */
+    .st-emotion-cache-h5h2a3 {
         padding-top: 2rem;
         padding-right: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
     }
-    
-    /* Estilo para los botones al pasar el ratón */
-    .stButton>button {
-        background-color: transparent !important;
-        border: none !important;
-        color: white !important;
-        text-align: left;
-    }
-    .stButton>button:hover {
-        background-color: #002e5e !important;
-    }
 
-    /* Estilo para los títulos */
-    .stMarkdown h3 {
-        color: white;
-    }
     </style>
     """,
     unsafe_allow_html=True
