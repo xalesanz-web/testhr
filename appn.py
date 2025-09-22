@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 
-# ---- Cargar el CSS desde el archivo ----
+# Función para cargar el archivo CSS
 def load_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -29,30 +29,16 @@ with st.sidebar:
     if st.button("Configuración"):
         st.session_state.page = "configuracion"
 
-# ---- Contenido Principal (Basado en la selección del menú) ----
+# ---- Contenido Principal ----
 if 'page' not in st.session_state:
     st.session_state.page = "inicio"
 
 if st.session_state.page == "inicio":
     col1, col2, col3 = st.columns([1, 4, 1])
     with col2:
-        st.image("IMG/LOGO.jpg", width=400) # La imagen principal ahora se muestra
+        st.image("IMG/LOGO.jpg", width=400)
         st.markdown("<h1 style='text-align: center; color: white;'>Sura Actuarial Desk</h1>", unsafe_allow_html=True)
-elif st.session_state.page == "semantica":
-    st.markdown("<h1 style='color: white;'>Generar Semántica</h1>", unsafe_allow_html=True)
-    st.write("Aquí puedes generar la semántica.")
-elif st.session_state.page == "procesa":
-    st.markdown("<h1 style='color: white;'>Procesa</h1>", unsafe_allow_html=True)
-    st.write("Aquí puedes procesar datos.")
-elif st.session_state.page == "visualiza":
-    st.markdown("<h1 style='color: white;'>Visualizar Datos</h1>", unsafe_allow_html=True)
-    st.write("Aquí puedes visualizar los datos.")
-elif st.session_state.page == "reporte":
-    st.markdown("<h1 style='color: white;'>Reporte de Resultados</h1>", unsafe_allow_html=True)
-    st.write("Aquí puedes generar un reporte.")
-elif st.session_state.page == "configuracion":
-    st.markdown("<h1 style='color: white;'>Configuración</h1>", unsafe_allow_html=True)
-    st.write("Aquí puedes configurar la herramienta.")
+# ... [Código para las demás páginas] ...
 
-# ---- Cargar el CSS después de los componentes para que se apliquen los estilos
+# ---- Cargar el CSS ----
 load_css("styles.css")
