@@ -1,0 +1,40 @@
+/* Estilo del fondo de la página */
+.stApp {
+    background-color: #001f3f;
+}
+
+/* Estilo de la barra lateral */
+section[data-testid="stSidebar"] {
+    background-color: #00122e;
+}
+
+/* Estilo para los títulos y texto de la barra lateral */
+.st-emotion-cache-18ni7ap { /* Selector para el contenedor del logo y el título en la sidebar */
+    color: white;
+}
+.st-emotion-cache-1w21rpi { /* Selector para el título del logo */
+    color: white;
+}
+.st-emotion-cache-n9n9p2 { /* Selector para el texto en la sidebar */
+    color: white;
+}
+.st-emotion-cache-18ni7ap { /* Otro selector para el texto de la sidebar */
+    color: white;
+}
+
+/* Estilo para el botón de expandir/contraer sidebar */
+button[data-testid="stSidebarNav"] {
+    display: none !important;
+}
+
+/* Estilo para los botones del menú */
+.stButton > button {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+    text-align: left;
+    width: 100%;
+}
+.stButton > button:hover {
+    background-color: #002e5e !important;
+}
