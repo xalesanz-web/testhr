@@ -1,9 +1,9 @@
-/* Estilo del fondo de la página principal */
+/* Estilo del fondo de la página */
 .stApp {
     background-color: #001f3f;
 }
 
-/* Estilo de la barra lateral */
+/* Estilo del color de fondo de la barra lateral */
 section[data-testid="stSidebar"] {
     background-color: #00122e;
 }
@@ -14,21 +14,21 @@ section[data-testid="stSidebar"] {
     color: white !important;
 }
 
-/* Oculta el botón de la flecha para cerrar la barra lateral */
-button[data-testid="stSidebarNavCollapseButton"] {
-    display: none !important;
-}
-
 /* Estilo para los botones del menú */
 .stButton > button {
     background-color: transparent !important;
     border: none !important;
-    color: white !important; /* ¡Este es el selector clave! */
+    color: white !important;
     text-align: left;
     width: 100%;
 }
 .stButton > button:hover {
     background-color: #002e5e !important;
+}
+
+/* Oculta el botón del icono de la barra lateral */
+button[data-testid="stSidebarNavCollapseButton"] {
+    visibility: hidden;
 }
 
 /* Estilo para los títulos principales */
