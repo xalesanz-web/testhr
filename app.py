@@ -18,4 +18,5 @@ interfaz = gr.Interface(
 )
 
 # Lanza la interfaz
-interfaz.launch()
+
+interfaz.launch(share=True)
