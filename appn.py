@@ -14,7 +14,7 @@ st.set_page_config(
 
 # ---- Barra Lateral ----
 with st.sidebar:
-    st.image("LOGO.jpg", use_container_width=True)
+    st.image("LOGO.jpg")
     st.markdown("### Sura Actuarial Desk")
     st.markdown("---")
     
@@ -43,3 +43,4 @@ if st.session_state.page == "inicio":
 
 # ---- Cargar el CSS ----
 load_css("styles.css")
+
