@@ -3,8 +3,8 @@
     background-color: #001f3f;
 }
 
-/* Estilo de la barra lateral, usando un selector más genérico */
-[data-testid="stSidebar"] {
+/* Estilo de la barra lateral */
+section[data-testid="stSidebar"] {
     background-color: #00122e;
 }
 
@@ -23,7 +23,7 @@ button[data-testid="stSidebarNavCollapseButton"] {
 .stButton > button {
     background-color: transparent !important;
     border: none !important;
-    color: white !important;
+    color: white !important; /* ¡Este es el selector clave! */
     text-align: left;
     width: 100%;
 }
@@ -34,9 +34,4 @@ button[data-testid="stSidebarNavCollapseButton"] {
 /* Estilo para los títulos principales */
 h1 {
     color: white !important;
-}
-
-/* Estilo para las imágenes en la barra lateral */
-.st-emotion-cache-1w21rpi {
-    padding: 0;
 }
